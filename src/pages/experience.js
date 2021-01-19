@@ -3,6 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//------Import Gif------//
+import megif from "../images/me.gif"
+
 const Experience = () => {
   return (
     <Layout>
@@ -44,8 +47,7 @@ const Experience = () => {
             </ul>
           </div>
           <div className="exp-content-2">
-            <div className="gif">GIF</div>
-            {/* <img className="gif"/> */}
+            <img className="gif" src={megif} alt="me-myself-and-i" />
           </div>
         </div>
       </div>

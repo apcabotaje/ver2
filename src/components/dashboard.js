@@ -17,9 +17,9 @@ import CWLogo from "../svg/cw-logo.svg"
 const Dashboard = () => {
   const data = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "me.JPG" }) {
+      me: file(relativePath: { eq: "gatsby-icon.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -34,7 +34,7 @@ const Dashboard = () => {
           className="display-picture"
           fluid={data.me.childImageSharp.fluid}
         />
-        <h3>Ayman Cabotaje</h3>
+        <h1>Ayman Cabotaje</h1>
         <p>Software Engineer</p>
       </Link>
       <div className="navigation">
