@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Ayman Cabotaje`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Ayman Cabotaje is a software engineer specializing in building websites, applications and mobile apps.`,
+    author: `@namyaification`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,11 +26,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `AymanCabotaje`,
+        short_name: `AymanCabotaje`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#6cdbeb`,
+        theme_color: `#6cdbeb`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

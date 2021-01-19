@@ -39,13 +39,15 @@ li {
 //------Layout------//
 main {
   font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 80rem;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
   align-items: center;
   justify-content: center;
   .glass {
     background: white;
+    max-height: 80vh;
     min-height: 80vh;
     width: 80%;
     background: linear-gradient(
