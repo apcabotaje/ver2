@@ -139,6 +139,7 @@ main {
   flex: 2;
   box-sizing: border-box;
   overflow: auto;
+  object-fit: contain;
   //------Home Page------//
   .home {
     display: flex;
@@ -169,45 +170,65 @@ main {
   }
   //------Experience Page------//
   .exp {
+    object-fit: contain;
     .exp-content {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin: 3rem 0rem 0rem 6rem;
+      justify-content: flex-start;
+      margin: 3rem 3rem 0rem 6rem;
       .exp-content-1 {
         p {
           font-size: 1.5rem;
           margin-top: 1.2rem;
         }
-        .skill-list {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(14rem, 17rem));
-          padding: 0;
-          margin: 2rem 0 0 0;
-          overflow: hidden;
-          list-style: none;
-          li {
-            position: relative;
-            margin-bottom: 1rem;
-            padding-left: 2rem;
-            font-size: 1.3rem;
-            &:before {
-              content: "▹";
-              position: absolute;
-              left: 0;
-              line-height: 12px;
+      }
+      .exp-content-2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        .exp-tech-stack {
+          margin-right: 3rem;
+          p {
+            font-size: 1.5rem;
+            bottom: 1.2rem;
+          }
+          .skill-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(1rem, 18rem));
+            padding: 0;
+            overflow: hidden;
+            list-style: none;
+            li {
+              position: relative;
+              padding-left: 2rem;
+              font-size: 1.3rem;
+              margin-top: 2rem;
+              &:before {
+                content: "▹";
+                position: absolute;
+                left: 0;
+              }
             }
           }
         }
+        .me-gif {
+          .gif {
+            height: 20rem;
+            border-radius: 0.5rem;
+            opacity: 0.8;
+          }
+          .gif:hover {
+            opacity: 1;
+          }
+        }
       }
-      .exp-content-2 {
-        margin: 1.6rem;
-        .gif {
-          text-align: center;
-          font-size: 5rem;
-          height: 25rem;
-          width: 25rem;
-          border: 0.1rem solid black;
+      .exp-content-3 {
+        p {
+          font-size: 1.5rem;
+          margin-top: 1.2rem;
         }
       }
     }
@@ -432,6 +453,21 @@ main {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    .exp {
+      .exp-content {
+        .exp-content-2 {
+          .me-gif {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     .home {
@@ -449,12 +485,15 @@ main {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 1025px) {
   .toggle {
     .toggle-img {
       display: none;
     }
   }
+}
+
+@media only screen and (min-width: 992px) {
 }
 
 //------Shapes------//

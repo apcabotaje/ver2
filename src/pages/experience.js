@@ -29,25 +29,31 @@ const Experience = () => {
               skills exponentially, since then I never stop creating personal
               projects for myself, for my church and my community.
             </p>
+          </div>
+          <div className="exp-content-2">
+            <div className="exp-tech-stack">
+              <p>Here are some technologies I've been working with recently:</p>
+              <ul className="skill-list">
+                <li>Javascript (ES6+)</li>
+                <li>HTML &amp; (S)CSS</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Node.js</li>
+
+                <li>WordPress</li>
+              </ul>
+            </div>
+            <div className="me-gif">
+              <img className="gif" src={megif} alt="me-myself-and-i" />
+            </div>
+          </div>
+          <div className="exp-content-3">
             <p>
               I've also been in a Web Development Bootcamp to be a Full Stack
               Developer. Being Full Stack, it is a steep learning curve working
               from front-end to backend and trying other frameworks, but my
               driving passion to fulfill my purpose keeps me motivated.
             </p>
-            <p>Here are some technologies I've been working with recently:</p>
-            <ul className="skill-list">
-              <li>Javascript (ES6+)</li>
-              <li>HTML &amp; (S)CSS</li>
-              <li>React</li>
-              <li>Python</li>
-              <li>Node.js</li>
-
-              <li>WordPress</li>
-            </ul>
-          </div>
-          <div className="exp-content-2">
-            <img className="gif" src={megif} alt="me-myself-and-i" />
           </div>
         </div>
       </div>
